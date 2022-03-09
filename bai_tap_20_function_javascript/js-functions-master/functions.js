@@ -4,7 +4,10 @@
  * @return {string} the number as a string
  */
 function numberToString(n) {
-    return n + '';
+    //cách 1:
+    // return n + '';
+    //cách 2:
+    return n.toString(10)
 }
 
 /**
@@ -13,7 +16,7 @@ function numberToString(n) {
  * @return {number}
  */
 function increase(n) {
-    return n += 1;
+    return ++n // hoặc n+=1
 }
 
 /**
@@ -22,7 +25,7 @@ function increase(n) {
  * @return {number}
  */
 function decrease(n) {
-    return --n;
+    return --n; // hoặc n-=1
 }
 
 /**
@@ -85,23 +88,23 @@ function square(x) {
 function calculate(operation, x, y) {
     switch (operation) {
         case 'add':
-            z = x + y;
-            console.log(x + ' + ' + y + ' = ' + z);
+            s = x + y;
+            console.log(x + ' + ' + y + ' = ' + s);
             break;
         case 'subtract':
-            z = x - y;
-            console.log(x + ' - ' + y + ' = ' + z);
+            s = x - y;
+            console.log(x + ' - ' + y + ' = ' + s);
             break;
         case 'multiply':
-            z = x * y;
-            console.log(x + ' * ' + y + ' = ' + z);
+            s = x * y;
+            console.log(x + ' * ' + y + ' = ' + s);
             break;
         case 'divide':
-            z = x / y;
-            console.log(x + ' / ' + y + ' = ' + z);
+            s = x / y;
+            console.log(x + ' / ' + y + ' = ' + s);
             break;
     }
-    return z;
+    return s;
 }
 
 /**
